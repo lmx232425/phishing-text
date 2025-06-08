@@ -1,16 +1,87 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8" />
-    <title>超鏈接示範</title>
+  <meta charset="UTF-8">
+  <title>恭喜您被釣魚了！</title>
+  <style>
+    body {
+      background-color: #e0f7fa; /* 淺藍色背景 */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
+    }
+
+    .main-text {
+      font-size: 56px;
+      font-weight: bold;
+      color: #e53935;
+      animation: bounce 1s infinite alternate;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sub-text {
+      font-size: 18px;
+      color: #333;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      white-space: pre-line;
+    }
+
+    .survey-link {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1e88e5;
+      text-decoration: none;
+      animation: blink 1.5s infinite;
+    }
+
+    .survey-link:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes bounce {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align:center; margin-top:50px;">
-    <h1>請點擊下面的連結進入測試頁面</h1>
-    <p>
-        <a href="https://link.3ceng.cn/view/1b0ed321z" target="_blank" 
-           style="font-size: 24px; color: blue; text-decoration: underline;">
-           👉 點我進入詐騙測試頁面
-        </a>
-    </p>
+<body>
+
+  <!-- 🎉 主標題 -->
+  <div class="main-text">🎉 恭喜您被釣魚了！</div>
+
+  <!-- 📣 提示說明 -->
+  <div class="sub-text">
+    很抱歉打擾您，這是您的朋友李明軒的釣魚網絡詐騙研究測試，
+    溫馨提示請加強您的防詐意識，如若方便請幫忙填寫一下問卷，
+    祝您及您的家人身體健康！
+  </div>
+
+  <!-- 📝 問卷鏈接 -->
+  <a class="survey-link" href="https://www.surveycake.com/s/0ZDW9" target="_blank">
+    👉 https://www.surveycake.com/s/0ZDW9
+  </a>
+
 </body>
 </html>
